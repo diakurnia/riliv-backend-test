@@ -20,10 +20,10 @@ module.exports = {
   },
 
   production: {
-    database: process.env.DB_NAME,
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    host: process.env.DB_HOST,
+    database: 'deg1oem9ef4aoj',
+    username: 'alqhlnozbsmuzg',
+    password: '840d07e7e9ac2da1da58d222039b49ea747e34d97c1c0ca31ab372674a7a8516',
+    host: 'ec2-34-235-108-68.compute-1.amazonaws.com',
     dialect: 'postgres'
   }
 };
