@@ -12,10 +12,10 @@ router.put('/:id', PelangganController.updatePelanggan);
 router.delete('/:id', PelangganController.deletePelanggan);
 
 //route with token to authorization
-router.get('/', isAuthenticated, PelangganController.getAllPelanggan);
-router.post('/', isAuthenticated, PelangganController.addPelanggan);
-router.get('/:id', isAuthenticated, PelangganController.getPelangganById);
-router.put('/:id', isAuthenticated, PelangganController.updatePelanggan);
-router.delete('/:id', isAuthenticated, PelangganController.deletePelanggan);
+router.get('/auth', isAuthenticated, PelangganController.getAllPelanggan);
+router.post('/auth', isAuthenticated, PelangganController.addPelanggan);
+router.get('/auth/:id', isAuthenticated, PelangganController.getPelangganById);
+router.put('/auth/:id', isAuthenticated, PelangganController.updatePelanggan);
+router.delete('/auth/:id', isAuthenticated, PelangganController.deletePelanggan);
 
 module.exports = router;
