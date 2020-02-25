@@ -13,7 +13,7 @@ router.put('/:id', PesananController.updatePesanan);
 router.delete('/:id', PesananController.deletePesanan);
 
 //route with token to authorization
-router.get('/auth', isAuthenticated, PesananController.getAllPesanan);
+router.get('/auth/all', isAuthenticated, PesananController.getAllPesanan);
 router.post('/auth', isAuthenticated, PesananController.addPesanan);
 router.get('/auth/:id', isAuthenticated, PesananController.getPesananById);
 router.get('/auth/:id/pelanggan', isAuthenticated, PesananController.getPesananOfPelanggan);
