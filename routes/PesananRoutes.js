@@ -6,13 +6,11 @@ const router = Router();
 
 //route pesanan without authorization
 router.get('/', PesananController.getAllPesanan);
-router.post('/', PesananController.addPesanan);
 router.get('/:id', PesananController.getPesananById);
 router.get('/:id/pelanggan', PesananController.getPesananOfPelanggan);
-router.put('/:id', PesananController.updatePesanan);
-router.delete('/:id', PesananController.deletePesanan);
 
-//route with token to authorization
+
+//route pesanan with token to authorization
 router.get('/auth/all', isAuthenticated, PesananController.getAllPesanan);
 router.post('/auth', isAuthenticated, PesananController.addPesanan);
 router.get('/auth/:id', isAuthenticated, PesananController.getPesananById);
